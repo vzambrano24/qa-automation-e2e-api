@@ -1,0 +1,17 @@
+{
+  "executionDate": "2026-11-24T22:55:55.507Z",
+  "request": {
+    "method": "DELETE",
+    "url": "https://petstore.swagger.io/v2/user/qa_user_1795560954280",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "durationMs": 100,
+    "body": {
+      "code": 200,
+      "type": "unknown",
+      "message": "qa_user_1795560954280"
+    }
+  }
+}

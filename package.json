@@ -1,0 +1,29 @@
+{
+  "name": "qa-automation-e2e-api",
+  "version": "1.0.0",
+  "description": "E2E and REST API Test Automation Framework using Cypress, POM and Service Object Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:e2e": "cypress run --browser chrome --spec cypress/e2e/ui/purchase.cy.js",
+    "test:api": "cypress run --spec cypress/e2e/api/user.cy.js",
+    "test:all": "cypress run --browser chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^16.3.0",
+    "cypress-mochawesome-reporter": "^5.0.0"
+  },
+  "overrides": {
+    "mocha": {
+      "minimatch": "11.0.5",
+      "glob": "14.0.6",
+      "serialize-javascript": "7.1.4"
+    }
+  }
+}

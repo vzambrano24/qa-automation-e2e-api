@@ -1,0 +1,14 @@
+
+{
+    "user": {
+        "firstName": "Victoria",
+        "lastName": "Zambrano",
+        "password": "QaTest2026!",
+        "phone": "0990000000",
+        "userStatus": 1
+    },
+    "updatedUser": {
+        "firstName": "PruebaUser",
+        "email": "vicky@example.com"
+    }
+}

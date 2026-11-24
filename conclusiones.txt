@@ -1,0 +1,192 @@
+CONCLUSIONES Y HALLAZGOS - AUTOMATIZACIÓN E2E Y API REST
+
+1. OBJETIVO
+
+Validar el correcto funcionamiento del flujo de compra de dos productos en SauceDemo mediante pruebas funcionales automatizadas.
+
+2. RESULTADOS DE EJECUCIÓN
+
+Fecha: 24/11/2026
+Herramienta: Cypress 16.3.0
+Navegador: Google Chrome
+Modo de ejecución: Headless
+Escenario: E2E-001
+
+Casos ejecutados: 1
+Casos exitosos: 1
+Casos fallidos: 0
+Porcentaje de éxito: 100%
+Tiempo de ejecución aproximado: 5 segundos.
+
+Resultado: APROBADO.
+
+3. HALLAZGOS FUNCIONALES
+
+- La autenticación con credenciales válidas se realizó correctamente.
+- La aplicación permitió agregar dos productos al carrito.
+- Los productos y cantidades coincidieron con los datos seleccionados.
+- El formulario de compra permitió registrar la información requerida.
+- Las validaciones de consistencia de los valores monetarios fueron satisfactorias.
+- La compra finalizó correctamente, mostrando el mensaje "Thank you for your order!".
+
+No se identificaron defectos funcionales que impidieran completar el escenario evaluado.
+
+4. HALLAZGOS TÉCNICOS
+
+Durante las ejecuciones interactivas se observaron solicitudes externas de telemetría que no afectaron el resultado del escenario automatizado.
+
+Se recomienda revisar dichas solicitudes para determinar su causa e impacto, sin clasificarlas como defectos funcionales hasta contar con información adicional.
+
+5. CONCLUSIONES
+
+La implementación del patrón Page Object Model permitió organizar los componentes de automatización, facilitar su reutilización y mejorar la mantenibilidad del código.
+
+La separación de los datos de prueba mediante archivos JSON permite incorporar nuevos conjuntos de información sin modificar directamente la lógica del escenario.
+
+El uso de atributos data-test proporcionó localizadores específicos y facilitó la interacción con los elementos de la aplicación.
+
+Las aserciones implementadas permitieron validar tanto la navegación como las reglas funcionales del flujo de compra.
+
+La integración de Mochawesome permitió generar reportes HTML y evidencias que facilitan la trazabilidad y el análisis de resultados.
+
+El escenario automatizado cumplió satisfactoriamente con los requisitos funcionales establecidos para el ejercicio E2E.
+
+6. RECOMENDACIONES
+
+- Incorporar escenarios negativos de autenticación.
+- Validar campos obligatorios del formulario de compra.
+- Incorporar escenarios de eliminación de productos del carrito.
+- Ampliar la cobertura mediante pruebas parametrizadas.
+- Incorporar la ejecución automatizada en un pipeline CI/CD.
+- Ejecutar pruebas de compatibilidad en diferentes navegadores.
+
+7. LIMITACIONES
+
+Los resultados corresponden exclusivamente al escenario funcional evaluado y no representan una certificación integral de la calidad de la aplicación.
+
+La ejecución depende de la disponibilidad del ambiente público de SauceDemo.
+8. RESULTADOS DE AUTOMATIZACIÓN API – SWAGGER PETSTORE
+
+Fecha de ejecución: 24/11/2026
+Herramienta: Cypress 16.3.0
+Modo de ejecución: Headless
+
+Escenarios automatizados: 1
+Operaciones REST evaluadas: 6
+Escenarios exitosos: 1
+Escenarios fallidos: 0
+Porcentaje de éxito: 100%
+Tiempo de ejecución aproximado: 1 segundo.
+
+Resultado: APROBADO.
+
+9. HALLAZGOS FUNCIONALES API
+
+- La creación del usuario se realizó correctamente.
+- La consulta permitió recuperar la información registrada.
+- El servicio permitió actualizar el nombre y correo electrónico.
+- La consulta posterior permitió verificar la persistencia de los cambios.
+- La eliminación del usuario se ejecutó satisfactoriamente.
+- La consulta posterior a la eliminación permitió validar que el usuario ya no se encontraba disponible.
+- No se identificaron defectos funcionales que impidieran completar el escenario evaluado.
+
+10. HALLAZGOS TÉCNICOS API
+
+La generación dinámica de identificadores y nombres de usuario reduce el riesgo de conflictos con registros existentes en el ambiente público.
+
+La automatización permitió validar los códigos de respuesta HTTP y el contenido de las respuestas.
+
+Se generaron seis archivos JSON con información de las solicitudes y respuestas, proporcionando trazabilidad de las operaciones realizadas.
+
+El enmascaramiento de contraseñas en los archivos de evidencia permite reducir la exposición de información sensible.
+
+11. CONCLUSIONES DE AUTOMATIZACIÓN API
+
+El patrón Service Object Model permitió centralizar la comunicación con los servicios REST y facilitar la reutilización de los métodos HTTP.
+
+La separación de los datos y la lógica de pruebas favorece la mantenibilidad y escalabilidad del framework.
+
+La implementación de validaciones posteriores a la actualización y eliminación permitió comprobar la consistencia de la información durante el ciclo de vida del usuario.
+
+12. CONCLUSIONES GENERALES DEL PROYECTO
+
+Se implementó un framework de automatización utilizando Cypress y JavaScript, integrando pruebas funcionales E2E y pruebas de servicios REST.
+
+Se aplicaron los patrones Page Object Model y Service Object Model, promoviendo la separación de responsabilidades y reutilización del código.
+
+Los dos escenarios automatizados fueron ejecutados satisfactoriamente de manera individual, cumpliendo con los requisitos funcionales solicitados.
+
+La generación de reportes HTML, videos, capturas de pantalla y evidencias JSON proporciona trazabilidad de las ejecuciones realizadas.
+
+13. RECOMENDACIONES DE MEJORA
+
+- Incorporar pruebas negativas de servicios REST.
+- Implementar validaciones de contratos mediante JSON Schema.
+- Ampliar la cobertura funcional de ambos sistemas.
+- Incorporar pruebas de seguridad y rendimiento según los riesgos identificados.
+- Integrar la automatización en pipelines CI/CD.
+- Implementar estrategias de gestión de ambientes y datos de prueba.
+
+14. LIMITACIONES
+
+Los resultados corresponden exclusivamente a los escenarios evaluados.
+
+Los ambientes utilizados son públicos y compartidos, por lo que su disponibilidad y estabilidad dependen de servicios externos.
+
+Los tiempos registrados corresponden a ejecuciones funcionales y no constituyen resultados de pruebas de rendimiento.
+
+15. RESULTADOS DE EJECUCIÓN CONSOLIDADA
+
+Fecha de ejecución: 24/11/2026
+Herramienta: Cypress 16.3.0
+Navegador: Google Chrome
+Modo de ejecución: Headless
+
+Escenarios ejecutados: 2
+Escenarios aprobados: 2
+Escenarios fallidos: 0
+Porcentaje de éxito: 100%
+
+Tiempo de ejecución API: 1.5 segundos.
+Tiempo de ejecución E2E: 6.9 segundos.
+Tiempo total aproximado: 8 segundos.
+
+Se generó satisfactoriamente el reporte HTML consolidado mediante Mochawesome.
+
+Durante la revisión estática se identificó una importación duplicada en el archivo de soporte e2e.js, la cual fue corregida. Posteriormente se ejecutaron nuevamente ambos escenarios, obteniendo resultados satisfactorios.
+
+Resultado final: APROBADO.
+16. ANÁLISIS DE SEGURIDAD DE DEPENDENCIAS (SCA)
+
+Como parte de la revisión de calidad del framework, se realizó un análisis de las dependencias mediante npm audit.
+
+Durante el análisis se identificaron vulnerabilidades de severidad moderada y alta asociadas a dependencias transitivas utilizadas por el generador de reportes Mochawesome.
+
+Se aplicó una estrategia de actualización controlada mediante la propiedad overrides de package.json, estableciendo las siguientes versiones:
+
+- minimatch: 11.0.5
+- glob: 14.0.6
+- serialize-javascript: 7.1.4
+
+Posteriormente, se realizaron las siguientes actividades:
+
+- Verificación del árbol de dependencias.
+- Ejecución de un nuevo análisis mediante npm audit.
+- Verificación de la instalación de Cypress.
+- Ejecución de pruebas de regresión E2E y API.
+- Generación del reporte consolidado.
+
+RESULTADOS FINALES
+
+Vulnerabilidades reportadas por npm audit: 0.
+Escenarios ejecutados: 2.
+Escenarios aprobados: 2.
+Escenarios fallidos: 0.
+Porcentaje de éxito: 100%.
+Tiempo aproximado de ejecución: 7 segundos.
+
+La actualización de las dependencias no afectó los escenarios automatizados ni la generación del reporte consolidado.
+
+Se recomienda realizar revisiones periódicas de las dependencias y verificar la compatibilidad de las actualizaciones mediante pruebas de regresión.
+
+Los resultados del análisis de seguridad corresponden a las dependencias evaluadas en la fecha de ejecución y no constituyen una certificación integral de seguridad.

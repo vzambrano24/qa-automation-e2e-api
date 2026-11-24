@@ -1,0 +1,47 @@
+﻿{
+  "version": "1.0.0",
+  "name": "qa-automation-e2e-api",
+  "dependencies": {
+    "cypress-mochawesome-reporter": {
+      "version": "5.0.0",
+      "resolved": "https://registry.npmjs.org/cypress-mochawesome-reporter/-/cypress-mochawesome-reporter-5.0.0.tgz",
+      "overridden": false,
+      "dependencies": {
+        "mochawesome": {
+          "version": "8.1.1",
+          "resolved": "https://registry.npmjs.org/mochawesome/-/mochawesome-8.1.1.tgz",
+          "overridden": false,
+          "dependencies": {
+            "mocha": {
+              "version": "12.0.3",
+              "resolved": "https://registry.npmjs.org/mocha/-/mocha-12.0.3.tgz",
+              "overridden": false,
+              "dependencies": {
+                "glob": {
+                  "version": "14.0.6",
+                  "resolved": "https://registry.npmjs.org/glob/-/glob-14.0.6.tgz",
+                  "overridden": true,
+                  "dependencies": {
+                    "minimatch": {
+                      "version": "11.0.5"
+                    }
+                  }
+                },
+                "minimatch": {
+                  "version": "11.0.5",
+                  "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-11.0.5.tgz",
+                  "overridden": true
+                },
+                "serialize-javascript": {
+                  "version": "7.1.4",
+                  "resolved": "https://registry.npmjs.org/serialize-javascript/-/serialize-javascript-7.1.4.tgz",
+                  "overridden": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

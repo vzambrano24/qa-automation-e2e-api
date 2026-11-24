@@ -1,0 +1,26 @@
+{
+  "executionDate": "2026-11-24T22:55:55.244Z",
+  "request": {
+    "method": "PUT",
+    "url": "https://petstore.swagger.io/v2/user/qa_user_1795560954280",
+    "body": {
+      "id": 1795560954280,
+      "username": "qa_user_1795560954280",
+      "firstName": "PruebaUser",
+      "lastName": "Zambrano",
+      "password": "********",
+      "phone": "0990000000",
+      "userStatus": 1,
+      "email": "vicky@example.com"
+    }
+  },
+  "response": {
+    "status": 200,
+    "durationMs": 103,
+    "body": {
+      "code": 200,
+      "type": "unknown",
+      "message": "1795560954280"
+    }
+  }
+}
